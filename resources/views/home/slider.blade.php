@@ -6,8 +6,8 @@
                                 <div class="col-xl-8 col-lg-9">
                                     <!-- Hero Caption -->
                                     <div class="hero__caption">
-                                        <h1>fashion<br>changing<br>always</h1>
-                                        <a href="home/shop.html" class="btn">Shop Now</a>
+                                        <h1>A Healthy you, <br> A Healthy world</h1>
+                                        <a href="{{url('/shop')}}" class="btn">Shop Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -20,8 +20,8 @@
                                 <div class="col-xl-8 col-lg-9">
                                     <!-- Hero Caption -->
                                     <div class="hero__caption">
-                                        <h1>fashion<br>changing<br>always</h1>
-                                        <a href="home/shop.html" class="btn">Shop Now</a>
+                                    <h1>A Healthy you, <br> A Healthy world</h1>
+                                        <a href="{{url('/shop')}}" class="btn">Shop Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -34,8 +34,8 @@
                                 <div class="col-xl-8 col-lg-9">
                                     <!-- Hero Caption -->
                                     <div class="hero__caption">
-                                        <h1>fashion<br>changing<br>always</h1>
-                                        <a href="home/shop.html" class="btn">Shop Now</a>
+                                    <h1>A Healthy you, <br> A Healthy world</h1>
+                                        <a href="{{url('/shop')}}" class="btn">Shop Now</a>
                                     </div>
                                 </div>
                             </div>

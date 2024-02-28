@@ -68,5 +68,5 @@ Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 
 Route::get('/cash_order', [HomeController::class, 'cash_order'])->name('cash_order');
 
-
+Route::get('/mpesa', [HomeController::class, 'mpesa'])->name('mpesa');
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Fashion | Teamplate</title>
+    <title>Zees Sweet Bloom | cart</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -42,7 +42,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="home/assets/img/logo/loder.png" alt="">
+                    <!-- <img src="home/assets/img/logo/loder.png" alt=""> -->
                 </div>
             </div>
         </div>
@@ -118,7 +118,7 @@
 <div>
     <h2>Proceed to Order :</h2>
     <a href="{{url('cash_order')}}" class="btn btn-danger">Cash On Delivery</a>
-    <a href="" class="btn btn-danger">Online Payment</a>
+    <a href="{{url('mpesa')}}" class="btn btn-danger">Online Payment</a>
 </div>
 
 <!--? Services Area End -->

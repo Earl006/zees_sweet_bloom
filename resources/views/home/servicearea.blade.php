@@ -1,4 +1,4 @@
-<div class="categories-area section-padding40 gray-bg">
+<div class="categories-area section-padding40 gray-bg mx-auto">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6">
@@ -12,7 +12,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            <!-- <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-cat mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                     <div class="cat-icon">
                         <img src="home/assets/img/icon/services2.svg" alt="">
@@ -22,8 +22,8 @@
                         <p>Free delivery on all orders</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            </div> -->
+            <!-- <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-cat mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                     <div class="cat-icon">
                         <img src="home/assets/img/icon/services3.svg" alt="">
@@ -46,5 +46,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>

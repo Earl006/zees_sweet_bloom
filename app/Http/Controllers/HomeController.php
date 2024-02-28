@@ -87,7 +87,9 @@ public function delete_cart($id)
 }
 public function shop() 
 {
-    return view('home.shop');
+    $products = product::paginate(10);
+
+    return view('home.shop',compact('products'));
 }
 public function about() 
 {
@@ -119,6 +121,31 @@ public function cash_order()
         $cart->delete();
     }
     return redirect()->back()->with('message','Order Placed Successfully, We Will Contact You Soon');
+}
+public function mpesa()
+{
+    $carts = cart::where('user_id',Auth::id())->get();
+    $total_price = 0;
+    foreach($carts as $cart){
+        $order = new order;
+        $order->name = Auth::user()->name;
+        $order->email = Auth::user()->email;
+        $order->phone = Auth::user()->phone;
+        $order->address = Auth::user()->address;
+        $order->product_title = $cart->product_title;
+        $order->price = $cart->price;
+        $order->quantity = $cart->quantity;
+        $order->image = $cart->image;
+        $order->user_id = Auth::id();
+        $order->product_id = $cart->product_id;
+        $order->payment_status = 'paid';
+        $order->delivery_status = 'pending';
+        $order->save();
+        $cart->delete();
+        $total_price = $total_price + ($cart->price * $cart->quantity);
+    }
+    return view('daraja.index',compact('order','total_price'));
+
 }
 
 }
