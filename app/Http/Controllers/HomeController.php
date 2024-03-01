@@ -124,30 +124,17 @@ public function cash_order()
 }
 public function mpesa()
 {
-    $carts = cart::where('user_id',Auth::id())->get();
-    $total_price = 0;
-    foreach($carts as $cart){
-        $order = new order;
-        $order->name = Auth::user()->name;
-        $order->email = Auth::user()->email;
-        $order->phone = Auth::user()->phone;
-        $order->address = Auth::user()->address;
-        $order->product_title = $cart->product_title;
-        $order->price = $cart->price;
-        $order->quantity = $cart->quantity;
-        $order->image = $cart->image;
-        $order->user_id = Auth::id();
-        $order->product_id = $cart->product_id;
-        $order->payment_status = 'paid';
-        $order->delivery_status = 'pending';
-        $order->save();
-        $cart->delete();
-        $total_price = $total_price + ($cart->price * $cart->quantity);
-    }
-    return view('daraja.index',compact('order','total_price'));
+    $cart = Cart::where('user_id', Auth::id())->get();
+    // $total_price = 0;
 
+    // // Loop through each item in the cart and calculate the total price
+    // foreach ($cart->price as $item) {
+    //     $total_price += $item->price * $item->quantity;
+    // }
+
+    return view('daraja.index', compact('cart'));
+}
 }
 
-}
 
 // Path: resources/views/admin/home.blade.php

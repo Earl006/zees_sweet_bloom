@@ -70,3 +70,5 @@ Route::get('/cash_order', [HomeController::class, 'cash_order'])->name('cash_ord
 
 Route::get('/mpesa', [HomeController::class, 'mpesa'])->name('mpesa');
 
+// Route::post('/stk_initiate', [HomeController::class, 'stk_initiate'])->name('stk_initiate');
+

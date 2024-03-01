@@ -79,7 +79,7 @@
           <div><span>Card</span></div>
         </div>
         <div class="media mt-4 pl-2">
-          <img src="./images/1200px-M-PESA_LOGO-01.svg.png" class="mr-3" height="75" />
+          <img src="/img/1200px-M-PESA_LOGO-01.svg.png" class="mr-3" height="75" /><br>
           <div class="media-body">
             <h6 class="mt-1">Enter Amount & Number</h6>
           </div>
@@ -87,11 +87,11 @@
         <div class="media mt-3 pl-2">
                           <!--bs5 input-->
 
-            <form class="row g-3" action="./stk_initiate.php" method="POST">
+            <form class="row g-3" action="{{route('getAccessToken')}}" method="POST">
             
                 <div class="col-12">
                   <label for="inputAddress" class="form-label">Amount</label>
-                  <input type="text" class="form-control" name="amount" value="{{$total_price}}">
+                  <input type="text" class="form-control" name="amount" placeholder="Enter Amount">
                 </div>
                 <div class="col-12">
                   <label for="inputAddress2" class="form-label" >Phone Number</label>
@@ -99,7 +99,7 @@
                 </div>
              
                 <div class="col-12">
-                  <button type="submit" class="btn btn-success" name="submit" value="submit">Donate</button>
+                  <button type="submit" class="btn btn-success" name="submit" value="submit">Pay</button>
                 </div>
               </form>
               <!--bs5 input-->
